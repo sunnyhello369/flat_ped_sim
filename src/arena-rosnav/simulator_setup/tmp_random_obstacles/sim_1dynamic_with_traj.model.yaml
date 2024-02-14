@@ -1,0 +1,31 @@
+bodies:
+- color:
+  - 1
+  - 0.2
+  - 0.1
+  - 1.0
+  footprints:
+  - collision: 'true'
+    density: 1
+    layers:
+    - all
+    radius: 0.3327015066227622
+    restitution: 0
+    sensor: 'false'
+    type: circle
+  name: object_with_traj
+  type: dynamic
+plugins:
+- body: object_with_traj
+  is_waypoint_relative: true
+  linear_velocity: 0.3506456975579993
+  mode: yoyo
+  move_to_start_pos_topic: /sim_1/dynamic_obs_9/move_to_start_pos
+  name: Tween2 Plugin
+  robot_odom_topic: /sim_1/odom
+  trigger_zones: []
+  type: Tween2
+  waypoints:
+  - - -0.8000000268220901
+    - -0.2343475472165426
+    - 0
